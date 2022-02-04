@@ -22,7 +22,7 @@ const App = () => {
 		if (!ops.includes(value)) {
 			console.log(value)
 			console.log(calc)
-			// setResult(eval(calc + value).toString());
+			setResult(eval(calc + value).toString());
 		}
 	}
 
@@ -47,14 +47,20 @@ const App = () => {
 		setCalc(eval(calc).toString());
 	}
 
-	const deleteLast = () => {
-		if (calc == '') {
-			return;
-		}
+	// 	// to delete single number
+	// const deleteLast = () => {
+	// 	if (calc == '') {
+	// 		return;
+	// 	}
 
-		const value = calc.slice(0, -1);
+	// 	const value = calc.slice(0, -1);
 
-		setCalc(value);
+	// 	setCalc(value);
+	// }
+
+	const deleteAll = () => {
+		setCalc('');
+		setResult('');
 	}
 
 	return (
@@ -74,7 +80,7 @@ const App = () => {
 					<button onClick={() => updateCalc('+')}>+</button>
 					<button onClick={() => updateCalc('-')}>-</button>
 
-					<button onClick={deleteLast}>DEL</button>
+					<button onClick={deleteAll}>DEL</button>
 				</div>
 
 				<div className="digits">

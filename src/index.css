@@ -1,9 +1,10 @@
 /* variables */
 :root {
-	--primary: coral;
+	--primary: #F58840;
 	--secondary: rgb(132, 24, 175);
 	--dark: black;
 	--light: rgb(184, 147, 147);
+	/* --light: #FFD5CD; */
 }
 
 * {
@@ -40,14 +41,15 @@ body {
 	padding: 16px;
 	text-align: right;
 	background-color: var(--dark);
-	color: var(--light);
+	/* color: var(--light); */
+	color: #EADEDE;
 	font-size: 24px;
 	font-weight: 300;
 }
 
 .display span {
 	font-size: 14px;
-	color: #888;
+	color: rgb(197, 190, 190);
 }
 
 button {
@@ -55,7 +57,7 @@ button {
 	appearance: none;
 	border: none;
 	outline: none;
-	color: #FFF;
+	color: #EADEDE;
 	font-size: 20px;
 	padding: 16px;
 	cursor: pointer;
